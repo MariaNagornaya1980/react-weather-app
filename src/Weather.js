@@ -7,7 +7,8 @@ import "./Weather.css";
 
 export default function Weather(props) {
   const apiKey = "b2d9fa1f2b35557e4615dd5fab218834";
-  let city = "";
+  let city = "New York";
+
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
